@@ -1,6 +1,6 @@
 {
   "name": "sol-search",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "An application to carry out various monitoring on the Solana network: bills, fees, months, deployments, etc.",
   "main": "main.js",
   "scripts": {
@@ -13,8 +13,8 @@
     "check": "ts-node src/index.ts"
   },
   "repository": {
-    "url": "https://github.com/voxxx1/sol-search",
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/voxxx1/sol-search.git"
   },
   "keywords": [
     "solana",
@@ -29,25 +29,28 @@
   },
   "homepage": "https://github.com/voxxx1/sol-search",
   "devDependencies": {
-    "husky": "^8.0.3",
     "@types/lodash": "^4.14.202",
+    "@types/node": "^20.11.24",
+    "husky": "^8.0.3",
     "jest": "^27.4.7",
     "prettier": "^2.8.8",
-    "@types/node": "^20.11.24",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
     "axios": "^1.6.7",
     "fs": "^0.0.1-security",
     "lodash": "^4.17.21",
     "markdown-expands-tab": "^1.2.0",
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "number-rand-cli": "^1.1.0",
+    "number-rand-cli": "^1.2.0",
+    "react-random-number-generator": "^1.2.0",
+    "round-number-cli": "^1.1.0",
+    "sol-search": "^1.0.0",
     "ssl-http-with-docker": "^1.1.0",
+    "typescript": "^5",
     "urlbitbucket-to-object": "^1.0.1",
     "urlgithub-to-object": "^1.0.3",
     "yargs": "^17.7.2"
