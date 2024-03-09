@@ -1,58 +1,74 @@
 {
-  "name": "sol-search",
-  "version": "1.1.1",
-  "description": "An application to carry out various monitoring on the Solana network: bills, fees, months, deployments, etc.",
-  "main": "main.js",
-  "scripts": {
-    "test": "jest --coverage",
-    "start": "cd src && node main.js",
-    "format": "prettier --write .",
-    "prepare": "husky install",
-    "pre-commit": "npm run lint",
-    "lint": "prettier --check .",
-    "check": "ts-node src/index.ts"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/voxxx1/sol-search.git"
-  },
-  "keywords": [
-    "solana",
-    "search",
-    "account",
-    "toll"
-  ],
-  "author": "zeuZ",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/voxxx1/sol-search/issues"
-  },
-  "homepage": "https://github.com/voxxx1/sol-search",
-  "devDependencies": {
-    "@types/lodash": "^4.14.202",
-    "@types/node": "^20.11.24",
-    "husky": "^8.0.3",
-    "jest": "^27.4.7",
-    "prettier": "^2.8.8",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
-  },
-  "dependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "axios": "^1.6.7",
-    "fs": "^0.0.1-security",
-    "lodash": "^4.17.21",
-    "markdown-expands-tab": "^1.2.0",
-    "number-rand-cli": "^1.2.0",
-    "react-random-number-generator": "^1.2.0",
-    "round-number-cli": "^1.1.0",
-    "sol-search": "^1.0.0",
-    "ssl-http-with-docker": "^1.1.0",
-    "typescript": "^5",
-    "urlbitbucket-to-object": "^1.0.1",
-    "urlgithub-to-object": "^1.0.3",
-    "yargs": "^17.7.2"
-  }
+    "name": "sol-search",
+    "version": "1.1.2",
+    "description": "Апликација која може да прати различите метрике на налозима на СОЛАНА мрежи",
+    "keywords": [
+        "Претражите новчанике",
+        "Дапп на мрежи Солана",
+        "солана метрицс",
+        "Solana app",
+        "adress app sol",
+        "adress search",
+        "Listen keys"
+    ],
+    "author": "zeuZ",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/voxxx1/sol-search.git"
+    },
+    "homepage": "https://github.com/voxxx1/sol-search/#readme",
+	"bugs": {
+        "url": "https://github.com/voxxx1/sol-search/issues"
+    },
+    "main": "main.js",
+    "files": [
+        "Dockerfile",
+        "README.md",
+        "scr/controllers/*.js",
+        "scr/data/*.json",
+        "scr/models/*.js",
+        "scr/tests/*.test.js",
+        "tea.yaml"
+    ],
+    "license": "ISC",
+    "private": false,
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "test": "jest --coverage",
+        "start": "cd src && node main.js",
+        "format": "prettier --write .",
+		"prepare": "husky install",
+        "pre-commit": "npm run lint",
+        "lint": "prettier --check .",
+        "check": "ts-node src/index.ts"
+    },
+    "devDependencies": {
+        "@types/lodash": "^4.14.202",
+        "@types/node": "^20.11.24",
+        "husky": "^8.0.3",
+        "jest": "^27.4.7",
+        "prettier": "^2.8.8",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.3.3"
+    },
+    "dependencies": {
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "axios": "^1.6.7",
+        "fs": "^0.0.1-security",
+        "lodash": "^4.17.21",
+        "markdown-expands-tab": "^1.2.0",
+        "number-rand-cli": "^1.2.0",
+        "react-random-number-generator": "^1.2.0",
+        "round-number-cli": "^1.1.0",
+        "sol-search": "^1.1.2",
+        "ssl-http-with-docker": "^1.1.0",
+        "typescript": "^5",
+        "urlbitbucket-to-object": "^1.0.1",
+        "urlgithub-to-object": "^1.0.3",
+        "yargs": "^17.7.2"
+    }
 }
